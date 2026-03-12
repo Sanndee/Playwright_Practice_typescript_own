@@ -4,6 +4,8 @@ import{test,expect } from "@playwright/test";
 
 test.beforeEach("Authentication", async({page})=>{
 
+
+console.log("Started the github");
 await page.goto("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
 await page.getByRole('textbox', { name: 'Username' }).fill("Admin");
 await page.getByRole('textbox', { name: 'Password' }).fill("admin123");

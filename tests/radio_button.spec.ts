@@ -11,6 +11,8 @@ test("radio button", async({page})=>{
      
 })
 
+
+console.log("Auto radio started");
 test("checkbox list ", async ({page})=>{
 
     await  page.goto("https://artoftesting.com/samplesiteforselenium");
