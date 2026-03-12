@@ -9,6 +9,15 @@ test("start the website",async({page})=>{
  
 })
 
+
+test.only("start the website2",async({page})=>{
+
+  await  page.goto("https://www.bingo.com/");
+  await  page.getByPlaceholder("Search for Products, Brands and More").pressSequentially("Mobiles");
+ const stt =page.getByPlaceholder("Search for Products, Brands and More")
+ await stt.dblclick()
+ 
+})
 test("Locators finding",async ({page})=>{
 
  await page.goto("https://www.saucedemo.com/");
